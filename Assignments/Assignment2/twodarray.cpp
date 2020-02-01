@@ -10,6 +10,7 @@ class twodarray
 
 };
 
+//PRINTS THE ARRAY
 void twodarray::Print(int arr[][5], int row, int col)
 {
   cout << "printing" << endl;
@@ -23,6 +24,7 @@ void twodarray::Print(int arr[][5], int row, int col)
 
 int main (int argc, char **argv)
 {
+  //INPUT ARRAY
   int a[4][5];
   twodarray arr;
   // 4 rows & 5 columns

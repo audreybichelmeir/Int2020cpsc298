@@ -50,7 +50,7 @@ void conversion::userinput(string& user, double feet, double inches)
     cout << "To exit calculation type 'exit' " << endl;
     // user = user.tolower();
     cin >> users;
-  } while(user != "exit");
+  } while(users != "exit");
 }
 
 void conversion::output(double& meters, double& centimeters)
@@ -61,9 +61,15 @@ cout << "Centimeters: " << centimeters << endl;
 
 int main (int argc, char **argv)
 {
+  string users = " ";
+  double userFt = 0;  // User defined feet
+  double userIn = 0;  // User defined inches
+  double meter = 0; // Conversion
+  double centimeter = 0; // Conversion
+
   conversion c;
   c.userinput(users, userFt, userIn);
-  c.output(meters, centimeters);
+  c.output(meter, centimeter);
 
   return 0;
 }
